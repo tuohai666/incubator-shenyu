@@ -72,7 +72,7 @@ He is known as one of the three greatest kings of ancient China, along with Yao 
 
 # Features
 
-   * ShenYu provides ability such as current limiting, fusing, forwarding, routing, monitoring and so on by its plugins.
+   * Apache ShenYu provides ability such as current limiting, fusing, forwarding, routing, monitoring and so on by its plugins.
    
    * Support HTTP, RESTFul, WebSocket, Dubbo, gRPC, Tars and Spring Cloud Proxy.
    
@@ -154,9 +154,9 @@ curl --location --request POST 'http://localhost:9195/shenyu/plugin/selectorAndR
 
 # Plugin
 
- Whenever a request comes in, ShenYu will execute it by all enabled plugins through the chain of responsibility.
+ Whenever a request comes in, Apache ShenYu will execute it by all enabled plugins through the chain of responsibility.
  
- As the heart of ShenYu, plugins are extensible and hot-pluggable.
+ As the heart of Apache ShenYu, plugins are extensible and hot-pluggable.
  
  Different plugins do different things.
  
@@ -182,7 +182,7 @@ curl --location --request POST 'http://localhost:9195/shenyu/plugin/selectorAndR
  
   Since all data have been cached using ConcurrentHashMap in the JVM, it's very fast.
   
-  ShenYu dynamically updates the cache by listening to the ZooKeeper node (or WebSocket push, HTTP long polling) when the user changes configuration information in the background management.
+  Apache ShenYu dynamically updates the cache by listening to the ZooKeeper node (or WebSocket push, HTTP long polling) when the user changes configuration information in the background management.
   
   ![](https://shenyu.apache.org/img/shenyu/dataSync/shenyu-config-processor-en.png)
   
